@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anbau – NECTAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/Cannabis_leaf.svg.png" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="bg-ghost" aria-hidden="true">
+      <div class="bg-wrap" id="bgWrap">
+        <img class="bg-icon" src="images/Cannabis_leaf.svg.png" alt="" />
+      </div>
+      <div class="bubbles" id="bubbles"></div>
+    </div>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="index.html" aria-label="NECTAR Home">
+          <div class="brand-mark">
+            <img src="images/Cannabis_leaf.svg.png" alt="NECTAR" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">NECTAR</span>
+            <span class="brand-tag">The Ghost-Infusion</span>
+          </div>
+        </a>
+        <nav class="nav" aria-label="Hauptnavigation">
+          <a href="anbau.html" data-i18n="nav.cultivation">Anbau</a>
+          <a href="produkte.html" data-i18n="nav.products">Produkte</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Sprache">
+            <button class="lang-btn" type="button" data-lang="de">DE</button>
+            <button class="lang-btn" type="button" data-lang="nl">NL</button>
+            <button class="lang-btn" type="button" data-lang="en">EN</button>
+          </div>
+          <a class="cta" href="index.html#kontakt" data-i18n="nav.cta">Pilotphase starten</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="index.html#problem" data-i18n="nav.problem">Problem</a>
+      <a href="index.html#loesung" data-i18n="nav.solution">Lösung</a>
+      <a href="index.html#vorteile" data-i18n="nav.benefits">Vorteile</a>
+      <a href="anbau.html" data-i18n="nav.cultivation">Anbau</a>
+      <a href="produkte.html" data-i18n="nav.products">Produkte</a>
+      <a href="index.html#pitch" data-i18n="nav.pitch">Pitch</a>
+      <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+      <a class="cta" href="index.html#kontakt" data-i18n="nav.cta">Pilotphase starten</a>
+    </div>
+
+    <nav class="side-menu" aria-label="Sektionen">
+      <a href="index.html#problem" data-i18n="nav.problem">Problem</a>
+      <a href="index.html#loesung" data-i18n="nav.solution">Lösung</a>
+      <a href="index.html#vorteile" data-i18n="nav.benefits">Vorteile</a>
+      <a href="index.html#produkte" data-i18n="nav.products">Produkte</a>
+      <a href="index.html#pitch" data-i18n="nav.pitch">Pitch</a>
+      <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+
+    <main>
+      <section id="anbau" class="section" data-animate="fade-up">
+        <div class="container">
+          <div class="process-header">
+            <div>
+              <p class="eyebrow" data-i18n="cultivation.eyebrow">Cultivation Intelligence</p>
+              <h1 data-i18n="cultivation.title">Premium‑Anbau als Erlebnis</h1>
+              <p class="lead" data-i18n="cultivation.lead">
+                Präzise Beleuchtungs‑ und Nährstoffsteuerung, KI‑Optimierung und
+                lückenlose Qualitätsmetriken – für eine unerreichte Luxus‑Qualität.
+              </p>
+            </div>
+            <div class="cert-stack">
+              <div class="cert-badge" data-i18n="cultivation.cert1">Zertifikat: GMP‑ready</div>
+              <div class="cert-badge" data-i18n="cultivation.cert2">Zertifikat: ISO‑Cleanroom</div>
+              <div class="cert-badge" data-i18n="cultivation.cert3">Zertifikat: AI‑Audit Trail</div>
+            </div>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-panel">
+              <div class="process-tabs" role="tablist" aria-label="Anbauphasen">
+                <button class="process-tab is-active" data-step="keimung" role="tab" aria-selected="true" data-i18n="cultivation.tab1">
+                  Keimung
+                </button>
+                <button class="process-tab" data-step="vegetativ" role="tab" aria-selected="false" data-i18n="cultivation.tab2">
+                  Vegetativ
+                </button>
+                <button class="process-tab" data-step="bluete" role="tab" aria-selected="false" data-i18n="cultivation.tab3">
+                  Blüte
+                </button>
+                <button class="process-tab" data-step="cure" role="tab" aria-selected="false" data-i18n="cultivation.tab4">
+                  Cure
+                </button>
+              </div>
+
+              <div class="process-content">
+                <div class="process-card is-active" data-panel="keimung">
+                  <h3 data-i18n="cultivation.step1.title">Keimung &amp; Start</h3>
+                  <p data-i18n="cultivation.step1.text">
+                    Mikroklima mit 98&nbsp;% Feuchte, sanfter Spektral‑Start und
+                    KI‑Seed‑Tracking für maximale Vitalität.
+                  </p>
+                  <div class="process-metrics">
+                    <div>
+                      <span data-i18n="cultivation.metric.light">Lichtprofil</span>
+                      <div class="meter"><span style="width: 38%"></span></div>
+                    </div>
+                    <div>
+                      <span data-i18n="cultivation.metric.nutrients">Nährstoff‑Flow</span>
+                      <div class="meter"><span style="width: 22%"></span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="process-card" data-panel="vegetativ">
+                  <h3 data-i18n="cultivation.step2.title">Vegetatives Wachstum</h3>
+                  <p data-i18n="cultivation.step2.text">
+                    Dynamische LED‑Matrix, präzise EC‑Kurven und KI‑Feedback in
+                    Echtzeit – Wachstum ohne Stress.
+                  </p>
+                  <div class="process-metrics">
+                    <div>
+                      <span data-i18n="cultivation.metric.light">Lichtprofil</span>
+                      <div class="meter"><span style="width: 72%"></span></div>
+                    </div>
+                    <div>
+                      <span data-i18n="cultivation.metric.nutrients">Nährstoff‑Flow</span>
+                      <div class="meter"><span style="width: 64%"></span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="process-card" data-panel="bluete">
+                  <h3 data-i18n="cultivation.step3.title">Blüte &amp; Potenz</h3>
+                  <p data-i18n="cultivation.step3.text">
+                    Spektral‑Boost, präzise Photoperiode und KI‑Optimierung für
+                    gleichmäßige Wirkstoff‑Profile.
+                  </p>
+                  <div class="process-metrics">
+                    <div>
+                      <span data-i18n="cultivation.metric.light">Lichtprofil</span>
+                      <div class="meter"><span style="width: 88%"></span></div>
+                    </div>
+                    <div>
+                      <span data-i18n="cultivation.metric.nutrients">Nährstoff‑Flow</span>
+                      <div class="meter"><span style="width: 76%"></span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="process-card" data-panel="cure">
+                  <h3 data-i18n="cultivation.step4.title">Cure &amp; Finish</h3>
+                  <p data-i18n="cultivation.step4.text">
+                    Kontrollierte Reifung mit KI‑gestützter Terpen‑Balance und
+                    perfekter Feuchte für samtige Qualität.
+                  </p>
+                  <div class="process-metrics">
+                    <div>
+                      <span data-i18n="cultivation.metric.maturity">Reifegrad</span>
+                      <div class="meter"><span style="width: 94%"></span></div>
+                    </div>
+                    <div>
+                      <span data-i18n="cultivation.metric.stability">Stabilität</span>
+                      <div class="meter"><span style="width: 86%"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-visual">
+              <div class="lux-chart">
+                <h4 data-i18n="cultivation.chart.title">Luxus‑Qualität</h4>
+                <div class="chart-bars">
+                  <div>
+                    <span data-i18n="cultivation.chart.aroma">Aroma</span>
+                    <div class="bar"><span style="width: 92%"></span></div>
+                  </div>
+                  <div>
+                    <span data-i18n="cultivation.chart.purity">Reinheit</span>
+                    <div class="bar"><span style="width: 96%"></span></div>
+                  </div>
+                  <div>
+                    <span data-i18n="cultivation.chart.stability">Stabilität</span>
+                    <div class="bar"><span style="width: 90%"></span></div>
+                  </div>
+                  <div>
+                    <span data-i18n="cultivation.chart.terpenes">Terpen‑Profil</span>
+                    <div class="bar"><span style="width: 94%"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="lux-gauge">
+                <div class="gauge-ring"></div>
+                <div class="gauge-value">
+                  <span>98%</span>
+                  <p data-i18n="cultivation.gauge.label">Luxus‑Score</p>
+                </div>
+                <p class="gauge-note" data-i18n="cultivation.gauge.note">Wert, verständlich visualisiert.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" data-animate="fade-up">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow" data-i18n="cultivation.benchmark.eyebrow">Benchmark &amp; Quellen</p>
+            <h2 data-i18n="cultivation.benchmark.title">Validierte Anbau‑Rahmenwerte</h2>
+            <p class="lead" data-i18n="cultivation.benchmark.lead">
+              Öffentliche Datenpunkte aus der Fachliteratur als Referenz für kontrollierte
+              Kultivierung. Werte sind sorten‑ und standortabhängig.
+            </p>
+          </div>
+
+          <div class="data-grid">
+            <article class="data-card">
+              <h3 data-i18n="cultivation.benchmark.temp.title">Temperatur (Tag)</h3>
+              <p class="data-value">24–30&nbsp;°C</p>
+              <p class="data-note" data-i18n="cultivation.benchmark.temp.note">Empfohlener Tagesbereich für Wachstum.</p>
+              <a class="data-source" href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Warmth" target="_blank" rel="noopener" data-i18n="common.source">Quelle</a>
+            </article>
+            <article class="data-card">
+              <h3 data-i18n="cultivation.benchmark.humidity.title">Luftfeuchte</h3>
+              <p class="data-value">40–60&nbsp;% RH</p>
+              <p class="data-note" data-i18n="cultivation.benchmark.humidity.note">Typischer Optimalbereich für Wachstum.</p>
+              <a class="data-source" href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Humidity" target="_blank" rel="noopener" data-i18n="common.source">Quelle</a>
+            </article>
+            <article class="data-card">
+              <h3 data-i18n="cultivation.benchmark.light.title">Lichtzyklus (Vegetativ)</h3>
+              <p class="data-value">16–24&nbsp;h Licht</p>
+              <p class="data-note" data-i18n="cultivation.benchmark.light.note">Längere Photoperiode fördert Vegetativ‑Wachstum.</p>
+              <a class="data-source" href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Light" target="_blank" rel="noopener" data-i18n="common.source">Quelle</a>
+            </article>
+            <article class="data-card">
+              <h3 data-i18n="cultivation.benchmark.flower.title">Blüte‑Trigger</h3>
+              <p class="data-value">≥&nbsp;12&nbsp;h Dunkelheit</p>
+              <p class="data-note" data-i18n="cultivation.benchmark.flower.note">Dunkelphase induziert Blüte bei Photoperiod‑Sorten.</p>
+              <a class="data-source" href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Light" target="_blank" rel="noopener" data-i18n="common.source">Quelle</a>
+            </article>
+            <article class="data-card">
+              <h3 data-i18n="cultivation.benchmark.ph.title">Substrat‑pH</h3>
+              <p class="data-value">5,8–6,5</p>
+              <p class="data-note" data-i18n="cultivation.benchmark.ph.note">Zielbereich für Nährstoffverfügbarkeit.</p>
+              <a class="data-source" href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Growth_medium" target="_blank" rel="noopener" data-i18n="common.source">Quelle</a>
+            </article>
+          </div>
+
+          <div class="data-panel">
+            <h3 data-i18n="cultivation.cea.title">CEA‑Steuergrößen (Controlled‑Environment Agriculture)</h3>
+            <ul>
+              <li data-i18n="cultivation.cea.item1">Temperatur (Luft, Wurzelzone)</li>
+              <li data-i18n="cultivation.cea.item2">Relative Luftfeuchte (RH)</li>
+              <li data-i18n="cultivation.cea.item3">CO2‑Gehalt</li>
+              <li data-i18n="cultivation.cea.item4">Licht (Intensität, Spektrum, Dauer)</li>
+              <li data-i18n="cultivation.cea.item5">Nährstoff‑Konzentration und pH‑Wert</li>
+              <li data-i18n="cultivation.cea.item6">Pflanzdichte &amp; Kulturdauer</li>
+            </ul>
+            <a class="data-source" href="https://en.wikipedia.org/wiki/Controlled-environment_agriculture#Technical_implementation" target="_blank" rel="noopener" data-i18n="common.source">Quelle</a>
+          </div>
+
+          <div class="sources">
+            <h3 data-i18n="cultivation.sources.title">Quellen</h3>
+            <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Warmth" target="_blank" rel="noopener">Wikipedia – Cannabis cultivation (Warmth)</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Humidity" target="_blank" rel="noopener">Wikipedia – Cannabis cultivation (Humidity)</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Light" target="_blank" rel="noopener">Wikipedia – Cannabis cultivation (Light)</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Cannabis_cultivation#Growth_medium" target="_blank" rel="noopener">Wikipedia – Cannabis cultivation (Growth medium)</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Controlled-environment_agriculture#Technical_implementation" target="_blank" rel="noopener">Wikipedia – Controlled‑environment agriculture</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <p>© 2026 NECTAR. The Ghost‑Infusion.</p>
+          <p data-i18n="footer.tagline">FoodTech · Cannabis‑Innovation</p>
+        </div>
+        <div class="footer-links">
+          <a href="impressum.html" data-i18n="footer.imprint">Impressum</a>
+          <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
+          <a href="kontakt.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="agb.html" data-i18n="footer.terms">AGB</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

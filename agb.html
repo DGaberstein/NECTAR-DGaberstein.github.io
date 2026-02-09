@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AGB – NECTAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/Cannabis_leaf.svg.png" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="bg-ghost" aria-hidden="true">
+      <div class="bg-wrap" id="bgWrap">
+        <img class="bg-icon" src="images/Cannabis_leaf.svg.png" alt="" />
+      </div>
+      <div class="bubbles" id="bubbles"></div>
+    </div>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="index.html" aria-label="NECTAR Home">
+          <div class="brand-mark">
+            <img src="images/Cannabis_leaf.svg.png" alt="NECTAR" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">NECTAR</span>
+            <span class="brand-tag">The Ghost-Infusion</span>
+          </div>
+        </a>
+        <nav class="nav" aria-label="Hauptnavigation">
+          <a href="anbau.html" data-i18n="nav.cultivation">Anbau</a>
+          <a href="produkte.html" data-i18n="nav.products">Produkte</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Sprache">
+            <button class="lang-btn" type="button" data-lang="de">DE</button>
+            <button class="lang-btn" type="button" data-lang="nl">NL</button>
+            <button class="lang-btn" type="button" data-lang="en">EN</button>
+          </div>
+          <a class="cta" href="index.html#kontakt" data-i18n="nav.cta">Pilotphase starten</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="index.html#problem" data-i18n="nav.problem">Problem</a>
+      <a href="index.html#loesung" data-i18n="nav.solution">Lösung</a>
+      <a href="index.html#vorteile" data-i18n="nav.benefits">Vorteile</a>
+      <a href="anbau.html" data-i18n="nav.cultivation">Anbau</a>
+      <a href="produkte.html" data-i18n="nav.products">Produkte</a>
+      <a href="index.html#pitch" data-i18n="nav.pitch">Pitch</a>
+      <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+      <a class="cta" href="index.html#kontakt" data-i18n="nav.cta">Pilotphase starten</a>
+    </div>
+
+    <nav class="side-menu" aria-label="Sektionen">
+      <a href="index.html#problem" data-i18n="nav.problem">Problem</a>
+      <a href="index.html#loesung" data-i18n="nav.solution">Lösung</a>
+      <a href="index.html#vorteile" data-i18n="nav.benefits">Vorteile</a>
+      <a href="index.html#produkte" data-i18n="nav.products">Produkte</a>
+      <a href="index.html#pitch" data-i18n="nav.pitch">Pitch</a>
+      <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+
+    <main>
+      <section class="section" data-animate="fade-up">
+        <div class="container">
+          <h1 data-i18n="legal.terms.title">Allgemeine Geschäftsbedingungen (AGB)</h1>
+          <p class="lead" data-i18n="legal.terms.lead">
+            Diese AGB gelten für Anfragen, Angebote und Pilotprojekte von
+            NECTAR FoodTech B.V.
+          </p>
+          <div class="card">
+            <h3 data-i18n="legal.terms.section1.title">1. Geltungsbereich</h3>
+            <p data-i18n="legal.terms.section1.text">
+              Diese AGB gelten für alle Geschäftsbeziehungen mit
+              NECTAR FoodTech B.V. Abweichende Bedingungen gelten nur, wenn
+              sie schriftlich bestätigt wurden.
+            </p>
+            <h3 data-i18n="legal.terms.section2.title">2. Leistungen</h3>
+            <p data-i18n="legal.terms.section2.text">
+              Wir bieten Produktinformationen, Muster/Pilotkontingente sowie
+              technologiebezogene Leistungen für Food &amp; Beverage an.
+            </p>
+            <h3 data-i18n="legal.terms.section3.title">3. Preise &amp; Zahlung</h3>
+            <p data-i18n="legal.terms.section3.text">
+              Preise ergeben sich aus dem jeweiligen Angebot. Zahlungen erfolgen
+              gemäß vereinbarter Zahlungsbedingungen.
+            </p>
+            <h3 data-i18n="legal.terms.section4.title">4. Haftung</h3>
+            <p data-i18n="legal.terms.section4.text">
+              Es gelten die gesetzlichen Haftungsbestimmungen. Eine Haftung für
+              entgangenen Gewinn ist ausgeschlossen, soweit gesetzlich zulässig.
+            </p>
+            <h3 data-i18n="legal.terms.section5.title">5. Schlussbestimmungen</h3>
+            <p data-i18n="legal.terms.section5.text">
+              Es gilt das Recht der Niederlande. Gerichtsstand ist, soweit zulässig,
+              der Sitz des Unternehmens in Amsterdam.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <p>© 2026 NECTAR. The Ghost‑Infusion.</p>
+          <p data-i18n="footer.tagline">FoodTech · Cannabis‑Innovation</p>
+        </div>
+        <div class="footer-links">
+          <a href="impressum.html" data-i18n="footer.imprint">Impressum</a>
+          <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
+          <a href="kontakt.html" data-i18n="footer.contact">Kontakt</a>
+          <a href="agb.html" data-i18n="footer.terms">AGB</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
