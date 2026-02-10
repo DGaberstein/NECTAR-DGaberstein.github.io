@@ -491,6 +491,10 @@ a {
   background: #0f1418;
 }
 
+.section.alt.investor-snapshot {
+  background: transparent;
+}
+
 .stats {
   padding-top: 1rem;
 }
