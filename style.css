@@ -1078,6 +1078,11 @@ a {
   will-change: transform;
 }
 
+.reviews-marquee:hover .reviews-track,
+.reviews-track:hover {
+  animation-play-state: paused;
+}
+
 .review-card {
   background: var(--card);
   border: 1px solid var(--line);
