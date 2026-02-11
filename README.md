@@ -1,6 +1,13 @@
-# NACTAR
+# NECTAR
 
-Static website for NACTAR, built with plain HTML, CSS, and JavaScript.
+Static website for NECTAR, built with plain HTML, CSS, and JavaScript.
+
+## Highlights
+
+- Multilingual UI (DE/EN/NL) with i18n strings in script.js
+- 60-second pitch section for quick investor context
+- Investor Snapshot section for traction, model, and go-to-market
+- Market data citations linked in the pitch section
 
 ## Pages
 
@@ -22,6 +29,13 @@ Static website for NACTAR, built with plain HTML, CSS, and JavaScript.
 ## Run locally
 
 Open index.html in a browser, or use a simple local server if you prefer.
+
+## Sources
+
+Market data cited in the pitch section:
+
+- https://www.fortunebusinessinsights.com/industry-reports/cannabis-marijuana-market-100219
+- https://businessofcannabis.com/what-is-really-going-on-in-the-uks-medical-cannabis-market-new-2025-data-analysis/
 
 ## Edit
 
